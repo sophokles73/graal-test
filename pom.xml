@@ -33,7 +33,7 @@
         <plugin>
           <groupId>org.graalvm.buildtools</groupId>
           <artifactId>native-maven-plugin</artifactId>
-          <version>0.9.7.1</version>
+          <version>0.9.9</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -67,6 +67,7 @@
               <imageName>graal-test</imageName>
               <mainClass>io.bosch.graal.GraalTest</mainClass>
               <buildArgs>
+              --native-image-info
               --no-fallback
               --verbose
               --static
